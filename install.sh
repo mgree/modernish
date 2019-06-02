@@ -184,7 +184,7 @@ pick_shell_and_relaunch() {
 	# find shells, eliminating non-compatible shells
 	shells_to_test=$(
 		{
-			which -aq sh ash dash zsh5 zsh ksh ksh93 lksh mksh yash bash
+			which -aq sh ash dash zsh5 zsh ksh ksh93 lksh mksh yash bash smoosh
 			if is -L reg /etc/shells && can read /etc/shells; then
 				grep -E '/([bdy]?a|pdk|[mlo]?k|z)?sh[0-9._-]*$' /etc/shells
 			fi
